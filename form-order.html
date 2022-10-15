@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Barang</title>
+</head>
+<body style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background-color:#EAECEE">
+    <header>
+        <table style="background-color:#D5D8DC; border-bottom:1px solid; width:100%; align-items:center; display:flex">    
+            <tr>
+                <td>
+                    <img  style="margin-left: 8px" src="panahkiri.png" alt="" width="60">
+                </td>
+                <td>
+                    <img  style="margin-left: 8px" src="panahkanan.png" alt="" width="60">
+                </td>
+                <td>
+                    <img  style="margin-left: 9px" src="logosilang.png" alt="" width="35">
+                </td>
+                <td>
+                    <img style="margin-left: 15px" src="logohome.png" alt="" width="35">
+                </td>
+                <td>
+                    <input style="margin-left: 20px; width:550%" type="text" value="file:///C:/xampp/htdocs/praktikum03/success-order.html">
+                </td>
+                <td>
+                    <img style="margin-left: 900px; margin-top:10px" src="searchbar.png" alt="" width="130">
+                </td>
+            </tr>
+        </table>
+    </header>
+    <br>
+    <center>    
+        <table style="border: 1px solid black; display:flex; width:70%">
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    Generate Link &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    Transaction History &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    Policy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    Logout&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+        </table>
+    </center>
+    <br>
+    <br>
+    <center>
+    <form method="POST" action="hasil-form-order.html">
+        <table>
+            <tr>
+                <td>
+                    <label for="picture">Upload Picture</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="file" name="photo">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="product">Product</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="title" style="width:529px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="description">Description</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <textarea name="description" cols="70" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="accountnumber">Account Number</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" style="width:529px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="bank">Bank</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" list="bank" name="list bank" style="width:280px">
+                    <datalist id="bank">
+                        <option value="Kookmin Bank">
+                        <option value="Visa Debit">
+                        <option value="Paypal">
+                        <option value="Woori Bank">
+                        <option value="Dana E-Wallet">
+                        <option value="Bank Rakyat Indonesia">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="accountholder">Account Holder</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" style="width:325px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="transaction">Transaction</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" name="transaction" min="1" max="10">
+                    <br>
+                    <span style="font-size:12px">* if the transaction is for 3 person, choose 3 from the drop-down list</span>
+                </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td>
+                    <input type="checkbox" id="phone" name="phone" value="send to mobile phone">
+                    <label for="phone"><span style="color:green; font-size:13px">Send to Mobile Phone</span></label><br>
+                    <input type="checkbox" id="email" name="email" value="send to email">
+                    <label for="email"><span style="color:green; font-size:13px">Send to Email</span></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">Send to Mobile Phone</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" style="width:350px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Send to Email</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="email" style="width:350px">
+                </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td>
+                    <input style="background-color:green; color:white" type="submit" value="Generate Nabr Link">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    </center>
+</body>
+</html>

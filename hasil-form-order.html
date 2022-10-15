@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pemesanan Barang</title>
+</head>
+<body style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background-color:#EAECEE">
+    <header>
+        <table style="background-color:#D5D8DC; border-bottom:1px solid; width:100%; align-items:center; display:flex">
+            <tr>
+                <td>
+                    <img  style="margin-left: 8px" src="panahkiri.png" alt="" width="60">
+                </td>
+                <td>
+                    <img  style="margin-left: 8px" src="panahkanan.png" alt="" width="60">
+                </td>
+                <td>
+                    <img  style="margin-left: 9px" src="logosilang.png" alt="" width="35">
+                </td>
+                <td>
+                    <img style="margin-left: 15px" src="logohome.png" alt="" width="35">
+                </td>
+                <td>
+                    <input style="margin-left: 20px; width:550%" type="text" id="linkweb" value="file:///C:/xampp/htdocs/praktikum03/success-order.html">
+                </td>
+                <td>
+                    <img style="margin-left: 900px; margin-top:10px" src="searchbar.png" alt="" width="130">
+                </td>
+            </tr>
+        </table>
+    </header>    
+    <br>
+    <center>    
+        <table style="border: 1px solid black; display:flex; width:70%">
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    Generate Link &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    Transaction History &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    Policy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    Logout&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+        </table>
+    </center>
+    <br>
+    <center>
+    <form method="POST">
+        <table>
+            <tr>
+                <td> </td>
+                <td colspan="3" align="center"> 
+                    <img src="samsungz4fold.png" alt="Samsung Z Flip 4 Fold 5G" width="300">
+                </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td colspan="5" align="center">
+                    <b>Samsung Z Flip 4 Fold 5G [Rose Gold ver.]</b>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <label for="product">Product</label>
+                </td>
+                <td>:</td>
+                <td>
+                    Samsung Z Flip 4 Fold 5G
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="description">Description</label>
+                </td>
+                <td>:</td>
+                <td>
+                    Year : 2022
+                </td>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td>
+                    Model : Flip Series
+                </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td>
+                    Condition : New Sealed (Rose Gold)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="amount">Total Amount</label>
+                </td>
+                <td>:</td>
+                <td>₩2.360.000 (KRW)</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="accountnumber">Pay To</label>
+                </td>
+                <td>:</td>
+                <td>011-234-567-1</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="payment">Payment Type</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" list="bank" name="listbank" style="width:320px" value="Kookmin Bank">
+                    <datalist id="bank">
+                        <option value="Kookmin Bank">
+                        <option value="Visa Debit">
+                        <option value="Paypal">
+                        <option value="Woori Bank">
+                        <option value="Dana E-Wallet">
+                        <option value="Bank Rakyat Indonesia">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="accountholder">Account Holder</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" style="width:350px" value="Irene Bae">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="transaction">Account No.</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="accountnumber" style="width:380px" value="011-234-567-1">
+                </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td>
+                    <input style="color:green" type="checkbox" id="phone" name="phone" value="081384341442, 081905380398" checked>
+                    <label for="phone"><span style="color:green; font-size:13px">Send to Mobile Phone</span></label><br>
+                    <input type="checkbox" name="email" value="reneaebae3@gmail.com" checked>
+                    <label for="email"><span style="color:green; font-size:13px">Send to Email</span></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">Send to Mobile Phone</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" style="width:330px" value="081384341442">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Send to Email</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="email" style="width:330px" value="renebaebae3@gmail.com">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <center>
+            <input style="background-color:green; color:white" type="submit" value="Pay Using QuidLink">
+        </center>
+    </form>
+    <br>
+    </center>
+</body>
+</html>
